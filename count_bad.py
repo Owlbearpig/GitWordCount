@@ -57,7 +57,7 @@ def commit_char_cnt(commit_id):
         full_raw_url = f'https://raw.githubusercontent.com{link_href_no_blob}'
         page = requests.get(full_raw_url)
         soup = BeautifulSoup(page.text, 'html.parser')
-        s +=len(soup.text)
+        s += len(soup.text)
 
     print(len(folder_list))
     print(len(tex_file_list))
